@@ -219,7 +219,9 @@ For entering 2nd level: ls -d -1 $PWD/*/*
 	-m = print the character counts
 	-l = print the newline counts 
 	-w = print the word counts
-	•	seq - print sequence of numbers (start step stop) 
+	
+•	seq - print sequence of numbers (start step stop) 
+
 	-f = format ( -f %5.1f, -f%3.1e, -f “Line: %g” )
 	-s = delimiter (default = \n)
 	
