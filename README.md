@@ -1,22 +1,22 @@
 # Command_Line
 
 •	Kernel = core app; allocates resources & talks to HW
-uname -r (-a)
-Latest: dnf list kernel
-Install: dnf install kernel-devel --best 
-sudo dnf update kernel  reboot sudo dnf –y update = update all 
+	uname -r (-a)
+	Latest: dnf list kernel
+	Install: dnf install kernel-devel --best 
+	sudo dnf update kernel  reboot sudo dnf –y update = update all 
 
 •	Shell=app that interprets the commands 
-Current: ps $$ or echo $0 
-Default: echo “$SHELL” 
-List: chsh -l or cat /etc/shells 
-Change: chsh -s shell_name  log out 
+	Current: ps $$ or echo $0 
+	Default: echo “$SHELL” 
+	List: chsh -l or cat /etc/shells 
+	Change: chsh -s shell_name  log out 
 
 
 •	Prompt = system symbol of cmd line (#,$,%,:) 
-Continuation prompt: > (continuation of previous line) 
-Breaking cmd in various lines: \ or | 
-Separating 2 commands at one line: ; or && 
+	Continuation prompt: > (continuation of previous line) 
+	Breaking cmd in various lines: \ or | 
+	Separating 2 commands at one line: ; or && 
 
 
 Basic Commands:
@@ -33,38 +33,49 @@ Basic Commands:
 •	../ = upper (parent) directory
 
 •	~ = user home directory
+
 •	.name = hidden dirs/files start with dot!
+
 •	name~ = backup files
+
 •	\ = escape character (split cmd line, special char) 
+
 •	$ = preceding variable name (“\$” to print $)
+
 •	$0 = name of the running process.
+
 •	$(cmd) = cmd substitution
+
 •	$((...)) = arithmetic expansion operator
+
 •	# sizeof
+
 •	| = pipeuse output of cmd 1 as input to cmd 2 
+
 •	0< = stdin 1> = stdout 2> = stderr &>= stdout&err
+
 stderr by default is going to the console as stdout 
 cat < file > file_content 2> error_content 
+
 •	> = stdout redirectionoverwriting the output file
+
 •	>> = stdout redirectionappending to output file
+
 •	< = take stdin from file (wc < file, <file wc, wc file, cat file | wc) 
+
 •	2>&1 = redirect (add) errors to stdout
+
 •	/dev/null = null device; discard all data & ret success 
-•	` ` - evaluate & replace=cmd substitution (`≠‘) 
+
+•	\` \` - evaluate & replace=cmd substitution (\`≠‘) 
+
 •	== \$(cmd) BUT ≠ \$cmd 
  
-
-
-
-
-
-
-
-
 ## Listing Commands:
 
  
 ls – print the contents of the current dir
+
 	- 1 = 1 output per line
 	- s = size
 	- l = long = all information 
@@ -76,6 +87,7 @@ ls – print the contents of the current dir
 	- t = sort by modification time, newest first 
 	- X = sort alphabetically by entry extensión
 	 - r = reverse order while sorting
+
 Pattern matching @command line
  	* = match all files and subdirectories (show subdir content) 
 *x = restrict to files and subdirectories starting with x
