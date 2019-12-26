@@ -23,10 +23,15 @@ Basic Commands:
 
  
 •	’ ’ - single quotes=do not touch this text
+
 •	" " - double=perform shell variable expansión
+
 •	/ = root directory
+
 •	./ = current directory
+
 •	../ = upper (parent) directory
+
 •	~ = user home directory
 •	.name = hidden dirs/files start with dot!
 •	name~ = backup files
@@ -46,7 +51,7 @@ cat < file > file_content 2> error_content
 •	2>&1 = redirect (add) errors to stdout
 •	/dev/null = null device; discard all data & ret success 
 •	` ` - evaluate & replace=cmd substitution (`≠‘) 
-•	== $(cmd) BUT ≠ $cmd 
+•	== \$(cmd) BUT ≠ \$cmd 
  
 
 
@@ -56,21 +61,21 @@ cat < file > file_content 2> error_content
 
 
 
-Listing Commands:
+## Listing Commands:
 
  
-ls – print the contents of the current dir 
-- 1 = 1 output per line
-- s = size
-- l = long = all information 
-- a = all -> hidden directories/files start with dot! 
-- H = follow symbolic links
-- R = list subdirectories recursively
-- d = do not enter inside directories 
-- S = sort by file size
-- t = sort by modification time, newest first 
-- X = sort alphabetically by entry extensión
- - r = reverse order while sorting
+ls – print the contents of the current dir
+	- 1 = 1 output per line
+	- s = size
+	- l = long = all information 
+	- a = all -> hidden directories/files start with dot! 
+	- H = follow symbolic links
+	- R = list subdirectories recursively
+	- d = do not enter inside directories 
+	- S = sort by file size
+	- t = sort by modification time, newest first 
+	- X = sort alphabetically by entry extensión
+	 - r = reverse order while sorting
 Pattern matching @command line
  	* = match all files and subdirectories (show subdir content) 
 *x = restrict to files and subdirectories starting with x
