@@ -1,12 +1,14 @@
 # Command_Line
 
 •	Kernel = core app; allocates resources & talks to HW
-	uname -r (-a)
-	Latest: dnf list kernel
-	Install: dnf install kernel-devel --best 
-	sudo dnf update kernel  reboot sudo dnf –y update = update all 
+
+		uname -r (-a)
+		Latest: dnf list kernel
+		Install: dnf install kernel-devel --best 
+		sudo dnf update kernel  reboot sudo dnf –y update = update all 
 
 •	Shell=app that interprets the commands 
+
 	Current: ps $$ or echo $0 
 	Default: echo “$SHELL” 
 	List: chsh -l or cat /etc/shells 
@@ -14,6 +16,7 @@
 
 
 •	Prompt = system symbol of cmd line (#,$,%,:) 
+
 	Continuation prompt: > (continuation of previous line) 
 	Breaking cmd in various lines: \ or | 
 	Separating 2 commands at one line: ; or && 
@@ -86,7 +89,7 @@ ls – print the contents of the current dir
 	- S = sort by file size
 	- t = sort by modification time, newest first 
 	- X = sort alphabetically by entry extensión
-	 - r = reverse order while sorting
+	- r = reverse order while sorting
 
 Pattern matching @command line:
 
@@ -127,6 +130,7 @@ For entering 2nd level: ls -d -1 $PWD/*/*
 •	type cmd - type of a cmd tool
 
 	-a : all occurrences of cmd name 
+	
 •	which cmd - which binary are you executing?
 
 •	which cmd vs sudo which python 
@@ -137,8 +141,8 @@ For entering 2nd level: ls -d -1 $PWD/*/*
 
 	-100 = last 100 commands
 	-i = include all information 
-		echo $HISTFILE  ~/.history
-		!+number_hist_line (!!=repeat last cmd -> sudo !!) 
+		- echo $HISTFILE ~/.history
+		- !+number_hist_line (!!=repeat last cmd -> sudo !!) 
 	
 •	echo - send argument to stdout:
 	
@@ -230,6 +234,7 @@ For entering 2nd level: ls -d -1 $PWD/*/*
 	^pattern : pattern @ beginning of line
 	pattern$ : pattern @ end of line 
 	n – next match ; (N = previous match) 
+	
 •	find - search for files.    [path] [conditions]   
 
 	-type + f=file, d=directory 
@@ -271,6 +276,7 @@ For entering 2nd level: ls -d -1 $PWD/*/*
 	-f =select only these fields --output-delimiter=STRING 
 	-l = list files
 	(default= same as input) 
+	
 •	paste - Concatenate horizontally; Merge lines of files 
 
 	= with NO arguments on 1 file = cat command
@@ -278,13 +284,16 @@ For entering 2nd level: ls -d -1 $PWD/*/*
 	-d "xy"= delimiters "xy" (default = TAB) 
 	- - - = num of "-" equals num of columns in output 
 	paste file1 file2 vs <file1 <file2 vs - - <file1 <file2 paste <(seq 10) <(cat text.txt) 
+	
 •	tr -option SET1 SET2 = translate/delete chars 
 
 	-s = squeeze-repeated chars from SET1 
 	-d= delete chars in SET1, do not translate 
 	tr -d "a-z" tr -d "[:digit:]" 
 	-c = keep just the characters set with -d option 
-	•	grep “STRING" [files] = print lines matching pattern 
+	
+•	grep “STRING" [files] = print lines matching pattern 
+
 	-v = Invert match; select non-matching lines.
 	-i = case unsensitive
 	-n = Prefix each line with its line number 
@@ -295,6 +304,7 @@ For entering 2nd level: ls -d -1 $PWD/*/*
 	-E = enable regular expression
 	-o = show just the pattern matched
 	-b = show byte offset of the starting point of match 
+	
 •	sed - line oriented stream editor
 
  	-i = edit files in place
