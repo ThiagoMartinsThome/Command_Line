@@ -12,7 +12,7 @@
 7. 	Copy the whole directory “sub1” to “sub3” directory.
 8. 	Change file name of “first_dir /sub2/text_file.txt.2” to “first_dir /sub2/text_file.txt.backup”
 9. 	Move “first_dir /sub2/text_file.txt.backup” to “first_dir” directory as hidden file
-10. 	Delete the “sub2” subdirectory
+10.	Delete the “sub2” subdirectory
 
 ### Solution:
 
@@ -29,9 +29,9 @@
 
 ## Content utilities :
 
-1. Save the information (permissions, size, modification date etc.) of the largest file located inside opentraveldata directory into a file largest_file.txt. (hint: use ls with sort option and pipe the result)
-2. How many words do first 5 lines of the Finn.txt have?
-3. Print first 3 lines of Text_example.txt together with line numbers (hint: use cat and head)
+1. 	Save the information (permissions, size, modification date etc.) of the largest file located inside opentraveldata directory into a file largest_file.txt. (hint: use ls with sort option and pipe the result)
+2.	How many words do first 5 lines of the Finn.txt have?
+3. 	Print first 3 lines of Text_example.txt together with line numbers (hint: use cat and head)
 
 ### Solution:
 
@@ -42,15 +42,15 @@
 
 ## Content utilities 
 
-1.Use Text_example.txt to generate a new file with the same content but with line number at the beginning of each line. 
-2.Generate a new file with twice the content of “Text_example.txt” one after another inside the file. (one full text content after another) 
-3.Open new shell inside a new terminal tab and using block search execute again the command where we printed the linux details at the beginning of the class (hint: it had "release" in the name) 
-4.Generate a file with creation timestamp and name of the user who created it on the first line. Something like this: 
+1.	Use Text_example.txt to generate a new file with the same content but with line number at the beginning of each line. 
+2.	Generate a new file with twice the content of “Text_example.txt” one after another inside the file. (one full text content after another) 
+3.	Open new shell inside a new terminal tab and using block search execute again the command where we printed the linux details at the beginning of the class (hint: it had "release" in the name) 
+4.	Generate a file with creation timestamp and name of the user who created it on the first line. Something like this: 
 "# This file is created by KSCHOOL on:Sun Nov 26 10:31:06 CET 2017 »
 (hint use command date to generate the time stamp, use man to read the date manual if needed) 
-5.Save last 20 commands used at command line to a file. (hint use history and redirect the output) 
-6.Print content of Text_example.txt except first 2 and last 3 lines. 
-7.How many lines does optd_aircraft.csv file have? 
+5.	Save last 20 commands used at command line to a file. (hint use history and redirect the output) 
+6.	Print content of Text_example.txt except first 2 and last 3 lines. 
+7.	How many lines does optd_aircraft.csv file have? 
 
 ### Solution:
 
@@ -67,10 +67,10 @@
 
 ## Content utilities 
 
-1.Find all files located inside subdirectories of your home directory which have been modified in last 60min
-2.Find all empty files inside subdirectories of your home directory which do NOT have read-write-execute permissions given to all users
-3.Expand previous command to grant these permissions using “ok” option.
-4.Get top 3 largest files per subdirectory inside ~/Data/ 
+1.	Find all files located inside subdirectories of your home directory which have been modified in last 60min
+2.	Find all empty files inside subdirectories of your home directory which do NOT have read-write-execute permissions given to all users
+3.	Expand previous command to grant these permissions using “ok” option.
+4.	Get top 3 largest files per subdirectory inside ~/Data/ 
 
 ### Solution:
 
@@ -82,20 +82,20 @@
 
 ## Sorting and Counting:
 
-1. Find top 10 files by size in your home directory including the subdirectories. Sort them by size and print the result including the size and the name of the file (hint: use find with –size and -exec ls –s parameters) 
+1. 	Find top 10 files by size in your home directory including the subdirectories. Sort them by size and print the result including the size and the name of the file (hint: use find with –size and -exec ls –s parameters) 
 
-2. Create a dummy file with this command : seq 15> 20lines.txt; seq 9 1 20 >> 20lines.txt; echo"20\n20" >> 20lines.txt; (check the content of the file first) 
+2. 	Create a dummy file with this command : seq 15> 20lines.txt; seq 9 1 20 >> 20lines.txt; echo"20\n20" >> 20lines.txt; (check the content of the file first) 
 	a)  Sort the lines of file based on alphanumeric characters 
 	b)  Sort the lines of file based on numeric values and eliminate the duplicates 
 	c)  Print just duplicated lines of the file 
 	d)  Print the line which has most repetitions 
 
-3. Create another file with this command : seq 0 2 40 > 20lines2.txt 
+3. 	Create another file with this command : seq 0 2 40 > 20lines2.txt 
 	a)  Create 3rd file combining the first two files (20lines.txt and 20lines2.txt) but without duplicates 
 	b)  Merge the content of 20lines.txt and 20lines2.txt into 40lines.txt. Print unique lines together with the number of occurrences of 40lines.txt file and sort the line based on line content. 
 	c)  How would you get the same result without passing through the intermediary file 40lines.txt? 
 
-4. Go to ~/Data/opentraveldata Get the line with the highest number of engines from optd_aircraft.csv by using sort. 
+4. 	Go to ~/Data/opentraveldata Get the line with the highest number of engines from optd_aircraft.csv by using sort. 
 
 ### Solution:
 
@@ -113,12 +113,13 @@
 ## Processing and filtering:
 
 Go to ~/Data/opentraveldata
-1.Change the delimiter of optd_aircraft.csv to “,”
-2.Check if optd_por_public.csv has repeated white spaces
-3.How many columns has optd_por_public.csv? (hint: use head and tr)
-4.Print column names of optd_por_public.csv  together with their column number. (hint: use paste)
-5.Use optd_airlines.csv to obtain the airline with the most flights?
-6.Use optd_airlines.csv to obtain number of airlines in each alliance?
+
+1.	Change the delimiter of optd_aircraft.csv to “,”
+2.	Check if optd_por_public.csv has repeated white spaces
+3.	How many columns has optd_por_public.csv? (hint: use head and tr)
+4.	Print column names of optd_por_public.csv  together with their column number. (hint: use paste)
+5.	Use optd_airlines.csv to obtain the airline with the most flights?
+6.	Use optd_airlines.csv to obtain number of airlines in each alliance?
 
 ### Solution:
 
@@ -135,11 +136,11 @@ Go to ~/Data/opentraveldata
 
 Go to ~/Data/opentraveldata
 
-1.Use grep to extract all 7x7 (where x can be any number) airplane models from optd_aircraft.csv. 
-2.Use grep to extract all 3xx (where x can be any number) airplane models from optd_aircraft.csv. 
-3.Use grep to obtain the number of airlines with prefix “aero” (case insensitive) in their name from optd_airlines.csv 
-4.How many optd_por_public.csv columns have “name” as part of their name? What are their numerical positions? (hint: use seq and paste)
-5.Find all files with txt extension inside home directory (including all sub directories) that have word “Science” (case insensitive) inside the content. Print file path and the line containing the (S/s)cience word. 
+1.	Use grep to extract all 7x7 (where x can be any number) airplane models from optd_aircraft.csv. 
+2.	Use grep to extract all 3xx (where x can be any number) airplane models from optd_aircraft.csv. 
+3.	Use grep to obtain the number of airlines with prefix “aero” (case insensitive) in their name from optd_airlines.csv 
+4.	How many optd_por_public.csv columns have “name” as part of their name? What are their numerical positions? (hint: use seq and paste)
+5.	Find all files with txt extension inside home directory (including all sub directories) that have word “Science” (case insensitive) inside the content. Print file path and the line containing the (S/s)cience word. 
 
 ### Solution:
 
@@ -153,8 +154,8 @@ Go to ~/Data/opentraveldata
 
 Use Text_example.txt
 
-1.Replace every “line” with new line character (“\n”)
-2.Print ONLY the lines that DON’T contain the “line” word
+1.	Replace every “line” with new line character (“\n”)
+2.	Print ONLY the lines that DON’T contain the “line” word
 
 ### Solution:
 
@@ -163,11 +164,11 @@ Use Text_example.txt
 
 ## Working with compressed Files:
 
-1.Go to ~/Data/us_dot/otp. Show the content of one of the files. 
-2.Use head/tail together with zcat command. Any difference in time execution?
-3.Compress “optd_por_public.csv” with bzip2 and then extract from the compressed file all the lines starting with MAD (hint: use bzcat and grep)
-4.(On_Time_On_Time_Performance_2015_1.zip): What are the column numbers of columns having “carrier” in the name ? (don't count!) (hint: we have seen this )
-5.(On_Time_On_Time_Performance_2015_1.zip) Print to screen, one field per line, the header and first line of the T100 file, side by side.
+1.	Go to ~/Data/us_dot/otp. Show the content of one of the files. 
+2.	Use head/tail together with zcat command. Any difference in time execution?
+3.	Compress “optd_por_public.csv” with bzip2 and then extract from the compressed file all the lines starting with MAD (hint: use bzcat and grep)
+4.	(On_Time_On_Time_Performance_2015_1.zip): What are the column numbers of columns having “carrier” in the name ? (don't count!) (hint: we have seen this )
+5.	(On_Time_On_Time_Performance_2015_1.zip) Print to screen, one field per line, the header and first line of the T100 file, side by side.
 
 ### Solution:
 
@@ -183,10 +184,10 @@ Use Text_example.txt
 
 ## Shell Script:
 
-1.Create a script that will return  column names together with their column number from the csv files. The first argument should be file name and the second delimiter.
-2.Create a script that accepts a CSV filename as input ($1 inside your script) and returns the model of the aircraft with the highest number of engines. (use it on  ~/Data/opentraveldata/optd_aircraft.csv) 
-3.Repeat script 2, but add a second argument to accept number of a column with the number of engines. If several planes have the highest number of engines, then the script will only show one of them.  (use it on  ~/Data/opentraveldata/optd_aircraft.csv) 
-4.Create a script that accepts as input arguments the name of the CSV file, and a number (number of engines) and returns number of aircrafts that have that number of engines. (use it on  ~/Data/opentraveldata/optd_aircraft.csv)  
+1.	Create a script that will return  column names together with their column number from the csv files. The first argument should be file name and the second delimiter.
+2.	Create a script that accepts a CSV filename as input ($1 inside your script) and returns the model of the aircraft with the highest number of engines. (use it on  ~/Data/opentraveldata/optd_aircraft.csv) 
+3.	Repeat script 2, but add a second argument to accept number of a column with the number of engines. If several planes have the highest number of engines, then the script will only show one of them.  (use it on  ~/Data/opentraveldata/optd_aircraft.csv) 
+4.	Create a script that accepts as input arguments the name of the CSV file, and a number (number of engines) and returns number of aircrafts that have that number of engines. (use it on  ~/Data/opentraveldata/optd_aircraft.csv)  
 
 ### Solution:
 
@@ -219,12 +220,12 @@ Use Text_example.txt
 
 ## CSVkit:
 
-1.Use csvstat to find out how many different manufactures are in the file
-2.Extract the column manufacturer and using pipes, use sort, uniq and wc  find out how many manufacturers are in the file. Why does this number differ to the number reported in csvstat?
-3.What are the top 5 manufacturers? 
-4.Using csvgrep, get only the records with manufacturer equal to Airbus and save them to a file with pipe (|) delimiter.
+1.	Use csvstat to find out how many different manufactures are in the file
+2.	Extract the column manufacturer and using pipes, use sort, uniq and wc  find out how many manufacturers are in the file. Why does this number differ to the number reported in csvstat?
+3.	What are the top 5 manufacturers? 
+4.	Using csvgrep, get only the records with manufacturer equal to Airbus and save them to a file with pipe (|) delimiter.
 
-Solution:
+### Solution:
 
 1.	csvstat -d "^" -c manufacturer optd_aircraft.csv
 
